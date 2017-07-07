@@ -1,0 +1,5 @@
+<resources>
+    <string name="data_parse_error">数据解析错误</string>
+    <string name="app_name">WzlueLib</string>
+    <string name="action_settings">Settings</string>
+</resources>

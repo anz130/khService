@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/little_light_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/userInfoLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_10"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_click_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/text_15">
+
+        <com.thinkcool.circletextimageview.CircleTextImageView
+            android:id="@+id/userImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/main_headpicture"
+            app:citv_fill_color="@color/white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/text_12"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/text_6"
+                android:text="张三"
+                android:textColor="@color/black_55"
+                android:textSize="@dimen/text_17" />
+
+            <TextView
+                android:id="@+id/main_companyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/text_6"
+                android:text="18013318888"
+                android:textColor="@color/graygray"
+                android:textSize="@dimen/text_12" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moneyBoxLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_click_white"
+        android:layout_marginTop="@dimen/text_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/text_14"
+        android:paddingTop="@dimen/text_14">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/text_15"
+            android:src="@mipmap/setting" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_17"
+            android:text="钱包"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/black_55" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_15"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+
+    <!--<View style="@style/line"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/shareLinear"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/bg_click_white"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingBottom="@dimen/text_14"-->
+        <!--android:paddingTop="@dimen/text_14">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="@dimen/text_15"-->
+            <!--android:src="@mipmap/setting" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/text_17"-->
+            <!--android:text="分享赚钱"-->
+            <!--android:textSize="@dimen/text_14"-->
+            <!--android:textColor="@color/black_55" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="@dimen/text_15"-->
+            <!--android:src="@mipmap/right" />-->
+
+    <!--</LinearLayout>-->
+
+    <View style="@style/line"/>
+
+    <LinearLayout
+        android:id="@+id/settingLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_click_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/text_14"
+        android:paddingTop="@dimen/text_14">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/text_15"
+            android:src="@mipmap/setting" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_17"
+            android:text="设置"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/black_55" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_15"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/little_light_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/text_10"
+            android:paddingLeft="@dimen/text_30"
+            android:paddingRight="@dimen/text_30"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/regist_phone" />
+
+            <EditText
+                android:id="@+id/userPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_20"
+                android:layout_weight="1"
+                android:background="@drawable/bg_click_white"
+                android:hint="请输入手机账号"
+                android:maxLength="18"
+                android:paddingBottom="@dimen/text_15"
+                android:paddingTop="@dimen/text_15"
+                android:selectAllOnFocus="false"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black_55"
+                android:textColorHint="@color/graygray"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:textSelectHandle="@mipmap/edit_handle_move"
+                android:textSelectHandleLeft="@mipmap/edit_handle_left"
+                android:textSelectHandleRight="@mipmap/edit_handle_right"
+                android:textSize="@dimen/text_15" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:background="@color/little_light_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/text_30"
+            android:paddingRight="@dimen/text_15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/regist_phone" />
+
+            <EditText
+                android:id="@+id/userCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_20"
+                android:layout_weight="1"
+                android:background="@drawable/bg_click_white"
+                android:layout_marginRight="@dimen/text_10"
+                android:hint="请输入验证码"
+                android:maxLength="6"
+                android:paddingBottom="@dimen/text_15"
+                android:paddingTop="@dimen/text_15"
+                android:selectAllOnFocus="false"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black_55"
+                android:textColorHint="@color/graygray"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:textSelectHandle="@mipmap/edit_handle_move"
+                android:textSelectHandleLeft="@mipmap/edit_handle_left"
+                android:textSelectHandleRight="@mipmap/edit_handle_right"
+                android:textSize="@dimen/text_15" />
+
+            <TextView
+                android:id="@+id/codeText"
+                android:layout_width="@dimen/text_60"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blue_round"
+                android:paddingTop="@dimen/text_10"
+                android:paddingBottom="@dimen/text_10"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12"
+                android:text="验证码"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:background="@color/little_light_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/text_30"
+            android:paddingRight="@dimen/text_30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/regist_phone" />
+
+            <EditText
+                android:id="@+id/userPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_20"
+                android:layout_weight="1"
+                android:background="@drawable/bg_click_white"
+                android:digits="@string/number_english"
+                android:hint="请输入密码"
+                android:maxLength="18"
+                android:paddingBottom="@dimen/text_15"
+                android:paddingTop="@dimen/text_15"
+                android:password="true"
+                android:selectAllOnFocus="false"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black_55"
+                android:textColorHint="@color/graygray"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:textSelectHandle="@mipmap/edit_handle_move"
+                android:textSelectHandleLeft="@mipmap/edit_handle_left"
+                android:textSelectHandleRight="@mipmap/edit_handle_right"
+                android:textSize="@dimen/text_15" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:background="@color/little_light_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/text_30"
+            android:paddingRight="@dimen/text_30"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/regist_phone" />
+
+            <EditText
+                android:id="@+id/userConfirmPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_20"
+                android:layout_weight="1"
+                android:background="@drawable/bg_click_white"
+                android:hint="请确认密码"
+                android:maxLength="50"
+                android:paddingBottom="@dimen/text_15"
+                android:paddingTop="@dimen/text_15"
+                android:selectAllOnFocus="false"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black_55"
+                android:textColorHint="@color/graygray"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:textSelectHandle="@mipmap/edit_handle_move"
+                android:textSelectHandleLeft="@mipmap/edit_handle_left"
+                android:textSelectHandleRight="@mipmap/edit_handle_right"
+                android:textSize="@dimen/text_15" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_20"
+            android:layout_marginRight="@dimen/text_20"
+            android:layout_marginTop="@dimen/text_30"
+            android:background="@drawable/bg_blue_round"
+            android:gravity="center"
+            android:paddingBottom="@dimen/text_15"
+            android:paddingTop="@dimen/text_15"
+            android:text="确  认"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15" />
+
+    </LinearLayout>
+
+</LinearLayout>
