@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_homeasup_default"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.7"
+    android:orientation="horizontal"
+    android:background="@color/green"
+    >
+    <ImageView
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/image_map"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/map1"/>
+    <TextView
+        android:id="@+id/tv_adress"
+        android:layout_toRightOf="@+id/image_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前地址"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+       />
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/image_msg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/msg"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_serch"
+        android:gravity="center"
+        android:text="输入购买需求 例：两个馒头"
+        android:textSize="30sp"
+        android:layout_below="@+id/tv_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_tv"/>
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        >
+     <Button
+         android:id="@+id/btn_sys"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="match_parent"
+         android:text="随意送"
+         android:textSize="20sp"
+         android:background="#8c1c6f"
+         android:textColor="@color/white"
+         />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btn_syg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="随意购"
+            android:textSize="20sp"
+            android:background="#8c1c6f"
+            android:textColor="@color/white"
+           />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btn_syb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="随意办"
+            android:textSize="20sp"
+            android:background="#8c1c6f"
+            android:textColor="@color/white"
+           />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8c1c6f"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@mipmap/tup"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       >
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
