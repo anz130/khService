@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_click_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/text_15"
+        android:paddingRight="@dimen/text_15"
+        android:paddingTop="@dimen/text_15"
+        android:paddingBottom="@dimen/text_15">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/local"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/text_15">
+
+            <TextView
+                android:id="@+id/addressName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/black_55"
+                android:textSize="@dimen/text_15"
+                android:text="小区名字"/>
+
+            <TextView
+                android:id="@+id/addressDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_10"
+                android:singleLine="true"
+                android:textColor="@color/graygray"
+                android:textSize="@dimen/text_15"
+                android:text="小区地址"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/line"/>
+
+</LinearLayout>
